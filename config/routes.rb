@@ -1,5 +1,43 @@
 Rails.application.routes.draw do
 
+  # Routes for the Airport resource:
+
+  # CREATE
+  post("/insert_airport", { :controller => "airports", :action => "create" })
+          
+  # READ
+  get("/airports", { :controller => "airports", :action => "index" })
+  
+  get("/airports/:path_id", { :controller => "airports", :action => "show" })
+  
+  # UPDATE
+  
+  post("/modify_airport/:path_id", { :controller => "airports", :action => "update" })
+  
+  # DELETE
+  get("/delete_airport/:path_id", { :controller => "airports", :action => "destroy" })
+
+  #------------------------------
+
+  # Routes for the Basis resource:
+
+  # CREATE
+  post("/insert_basis", { :controller => "bases", :action => "create" })
+          
+  # READ
+  get("/bases", { :controller => "bases", :action => "index" })
+  
+  get("/bases/:path_id", { :controller => "bases", :action => "show" })
+  
+  # UPDATE
+  
+  post("/modify_basis/:path_id", { :controller => "bases", :action => "update" })
+  
+  # DELETE
+  get("/delete_basis/:path_id", { :controller => "bases", :action => "destroy" })
+
+  #------------------------------
+
   # Routes for the Template resource:
 
   # CREATE
