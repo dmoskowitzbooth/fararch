@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: "home#index"
 
   # Routes for the Airport resource:
 
