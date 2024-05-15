@@ -10,21 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_05_15_182214) do
-  create_table "airports", force: :cascade do |t|
-    t.string "base"
-    t.string "airport"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "bases", force: :cascade do |t|
-    t.string "base"
-    t.boolean "cobase"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
+ActiveRecord::Schema[7.0].define(version: 2024_05_15_181736) do
   create_table "disciplines", force: :cascade do |t|
     t.integer "emp_id"
     t.integer "sup_id"
